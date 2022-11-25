@@ -4,5 +4,5 @@
 ```shell
 cd ~ && mv .zshrc .zshrc.bak && \
 git clone git@github.com:hermanzhaozzzz/my_zshrc.git .my_zshrc && \
-ln -s .my_zshrc/zshrc .zshrc
+ln -s .my_zshrc/zshrc.sh .zshrc
 ```
