@@ -180,6 +180,7 @@ alias l="exa -lha"
 alias squeuekillall="squeue | grep \"ZhnSnake\" | awk -F \" \" '{print \"scancel \"\$1}' | sh"
 alias squeuez="for i in \`squeue | grep chengqi| grep -v 'QOS not permitted' | awk '{print \$1}'\`; do (pkujob | grep \$i | xargs echo); done | grep zhaohn | awk -F '=' '{print \$2}' | awk '{print \$1}'"
 alias squeuey="squeue | grep chengqi | grep -v 'QOS not permitted'"
+alias ps-ef="ps -ef | grep chengqi | grep zhaohn"
 # Bioinformatic tools
 alias checkbam="for i in *.bam ;do (samtools quickcheck \$i && echo \"ok    \" \$i || echo \"error    \" \$i);done"
 
